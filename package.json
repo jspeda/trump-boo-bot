@@ -1,0 +1,15 @@
+{
+  "name": "trumptwitterbot",
+  "version": "1.0.0",
+  "description": "a bot that boos trump",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jspeda",
+  "license": "ISC",
+  "dependencies": {
+    "twit": "^2.2.5"
+  }
+}
