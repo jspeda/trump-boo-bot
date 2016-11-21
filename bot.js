@@ -54,3 +54,5 @@ function doATweet(text) {
     }
   }
 }
+
+doATweet("starting up");
