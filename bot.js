@@ -55,4 +55,4 @@ function doATweet(text) {
   }
 }
 
-doATweet("starting up");
+doATweet('starting up');
