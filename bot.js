@@ -1,5 +1,7 @@
 var Twit = require('twit');
-//var config = require('./config');
+// use following two lines for running locally. Or you can run 'heroku local' if using heroku.
+// var config = require('./config');
+// var T = new Twit(config);
 
 var T = new Twit({
   consumer_key:         process.env.consumer_key,
@@ -55,4 +57,4 @@ function doATweet(text) {
   }
 }
 
-doATweet('starting up');
+doATweet("Starting up!");
