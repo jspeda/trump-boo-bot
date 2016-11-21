@@ -1,5 +1,6 @@
 var Twit = require('twit');
 // use following two lines for running locally. Or you can run 'heroku local' if using heroku.
+
 // var config = require('./config');
 // var T = new Twit(config);
 
@@ -12,6 +13,7 @@ var T = new Twit({
 
 var trumpTwitter = 25073877;
 
+// listens for Trump Tweets and quotes them with a boo
 var stream = T.stream('statuses/filter', { follow: trumpTwitter });
 
 stream.on('tweet', tweetEvent);
@@ -20,7 +22,6 @@ function tweetEvent(event) {
   var text = event.text;
   var user = event.user.screen_name;
   var userID = event.user.id;
-  // figure out how to generate 'boo' with a random number of 'o's.
   var boo = booGenerator();
   if (userID === trumpTwitter) {
     console.log(text);
@@ -29,11 +30,12 @@ function tweetEvent(event) {
   }
 }
 
-
+// gets a random number
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+// adds a user-specified number of 'o's to boo
 function booGenerator() {
   var booBegin = "b"
   for (var i = 0; i < getRandomInt(2, 10); i++) {
@@ -42,6 +44,7 @@ function booGenerator() {
   return booBegin;
 }
 
+// tweet function
 function doATweet(text) {
   var tweet = {
     status: text
@@ -57,4 +60,5 @@ function doATweet(text) {
   }
 }
 
+// tweets on startup
 doATweet("Starting up!");
