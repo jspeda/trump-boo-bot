@@ -1,2 +1,5 @@
 # Ignore config
 /config.js
+
+# Ignore .env
+/.env
