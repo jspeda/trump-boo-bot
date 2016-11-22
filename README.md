@@ -2,7 +2,7 @@
 
 The least effective way to speak truth to power!
 
-[Tweets here](https://twitter.com/user/trumpboobot)
+[Tweets here](https://twitter.com/trumpboobot)
 
 ### Features
 
