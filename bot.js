@@ -61,4 +61,4 @@ function doATweet(text) {
 }
 
 // tweets on startup
-doATweet("Starting up!");
+// doATweet("clearing throat");
