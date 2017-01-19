@@ -28,12 +28,12 @@ function tweetEvent(event) {
     var quotedTweet = boo + ' https://twitter.com/' + user + '/status/' + id;
     doATweet(quotedTweet);
   }
-}
+};
 
 // Gets a random number
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
-}
+};
 
 // Gdds a user-specified number of 'o's to boo
 function booGenerator() {
@@ -42,7 +42,7 @@ function booGenerator() {
     booBegin+= "o"
   }
   return booBegin;
-}
+};
 
 // Tweet function
 function doATweet(text) {
@@ -58,4 +58,4 @@ function doATweet(text) {
       console.log('Looking good!');
     }
   }
-}
+};
