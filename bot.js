@@ -30,12 +30,12 @@ function tweetEvent(event) {
   }
 }
 
-// gets a random number
+// Gets a random number
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-// adds a user-specified number of 'o's to boo
+// Gdds a user-specified number of 'o's to boo
 function booGenerator() {
   var booBegin = "b"
   for (var i = 0; i < getRandomInt(2, 10); i++) {
@@ -44,7 +44,7 @@ function booGenerator() {
   return booBegin;
 }
 
-// tweet function
+// Tweet function
 function doATweet(text) {
   var tweet = {
     status: text
@@ -59,6 +59,3 @@ function doATweet(text) {
     }
   }
 }
-
-// tweets on startup
-// doATweet("clearing throat");
